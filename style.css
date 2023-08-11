@@ -89,6 +89,7 @@ li {
   font-size: 12px;
   font-weight: var(--font-thick);
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 input {
@@ -119,7 +120,7 @@ button {
   color: var(--white-color);
   font-weight: var(--font-thick);
   transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 button:hover {
@@ -154,6 +155,25 @@ button:hover {
   padding-bottom: 0;
   margin-bottom: 0;
   margin-top: 15px;
+}
+
+.input-error {
+  color: var(--tomato-color);
+  background-color: hsl(4, 100%, 67%, 20%);
+  border: 1px solid hsl(4, 100%, 67%);
+}
+
+.error-p {
+  color: var(--tomato-color);
+  font-size: 12px;
+  font-weight: var(--font-thick);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.paragraphs {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
